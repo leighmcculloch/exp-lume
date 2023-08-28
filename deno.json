@@ -1,0 +1,11 @@
+{
+  "tasks": {
+    "clean": "rm -fr ./_site",
+    "build": "deno run --allow-env=LUME_ENV --allow-read=. --allow-write=./_site ./scripts/build.ts",
+    "serve": "deno run --allow-env=LUME_ENV --allow-read=. --allow-write=./_site --allow-net=0.0.0.0:8000 ./scripts/serve.ts"
+  },
+  "imports": {
+    "std/": "https://deno.land/std@0.200.0/",
+    "lume/": "https://deno.land/x/lume@v1.18.4/"
+  }
+}
