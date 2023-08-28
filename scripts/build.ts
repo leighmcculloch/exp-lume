@@ -6,4 +6,6 @@ const site = lume({
 import vento from 'lume/plugins/vento.ts';
 site.use(vento());
 
+site.filter("t", (label) => label);
+
 await site.build();
